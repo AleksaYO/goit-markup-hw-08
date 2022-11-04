@@ -1,0 +1,91 @@
+.header {
+  /* padding: 25px 215px; */
+  border-bottom: 1px solid #ececec;
+}
+.header__container {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+.header__list {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+.page {
+  position: relative;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $text-color;
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color 250ms $cubic;
+}
+.page:hover {
+  color: $hover-color;
+  transition: color 250ms $cubic;
+}
+.page:focus {
+  color: $hover-color;
+  transition: color 250ms $cubic;
+}
+.header-adress {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+  gap: 50px;
+  align-items: center;
+}
+
+.header-adress__link {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $adress-color;
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  fill: #757575;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 250ms $cubic, fill 250ms $cubic;
+  &:hover {
+    color: $hover-color;
+    fill: $hover-color;
+    transition: color 250ms $cubic, fill 250ms $cubic;
+  }
+  &:focus {
+    color: $hover-color;
+    fill: $hover-color;
+    transition: color 250ms $cubic, fill 250ms $cubic;
+  }
+}
+
+.current {
+  color: $hover-color;
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $hover-color;
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+
+    left: 0;
+    bottom: 0;
+  }
+}

@@ -1,0 +1,52 @@
+.about {
+  padding-bottom: 94px;
+}
+
+.about__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.about__item {
+  position: relative;
+}
+
+.about-content {
+  position: absolute;
+
+  bottom: 0;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.about__point {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.about__container {
+  text-align: center;
+}
+
+.about__title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+  color: $text-color;
+  margin-bottom: 50px;
+}

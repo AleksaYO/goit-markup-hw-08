@@ -1,0 +1,20 @@
+// Utils
+@import "./base/reset";
+@import "./utils/var";
+@import "./utils/vis-hid";
+// Header
+@import "./components/header/header-logo";
+@import "./components/header/header";
+// Studio
+@import "./components/modal/modal";
+@import "./components/studio/hero";
+@import "./components/studio/advantages";
+@import "./components/studio/about";
+@import "./components/studio/team";
+@import "./components/studio/clients";
+// Portfolio
+@import "./components/portfolio/filter-btn/filter-btn";
+@import "./components/portfolio/works/works";
+
+@import "./components/footer/footer-logo";
+@import "./components/footer/footer";

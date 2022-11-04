@@ -1,0 +1,15 @@
+.footer__logo {
+  font-family: "Raleway", sens-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: $hover-color;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.footer__logo > span {
+  color: $secondary-hover;
+}
