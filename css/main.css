@@ -24,14 +24,24 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .container {
-    width: 100%;
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
   }
 }
 
@@ -544,23 +554,45 @@ img {
 }
 
 .advantages {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding-top: 94px;
+  }
 }
 
-.advantages-item {
-  width: 270px;
+.advantages__item {
+  width: 100%;
+}
+.advantages__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .advantages__item:not(:last-child) {
+    margin: 0;
+  }
 }
 @media screen and (min-width: 480px) {
-  .advantages-item {
+  .advantages__item {
     width: 450px;
-    display: inline-block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantages__item {
+    width: calc((100% - 30px) / 2);
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages__item {
+    width: calc((100% - 90px) / 4);
   }
 }
 
 .advantages-icon__box {
   background-color: #f5f4fa;
-  width: 270px;
+  width: 100%;
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -572,12 +604,18 @@ img {
 
 .advantages__list {
   list-style: none;
-  display: flex;
+  display: block;
   gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .advantages__point {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -585,10 +623,11 @@ img {
   text-transform: uppercase;
   color: #212121;
   margin-top: 30px;
+  text-align: center;
 }
 
 .advantages__text {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
