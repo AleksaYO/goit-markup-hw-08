@@ -21,6 +21,8 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -524,7 +526,7 @@ img {
 }
 
 .hero-btn {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -556,7 +558,7 @@ img {
 
 .btn {
   cursor: pointer;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
@@ -591,6 +593,7 @@ img {
 @media screen and (min-width: 1200px) {
   .advantages {
     padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -669,7 +672,14 @@ img {
 }
 
 .about {
-  padding-bottom: 94px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .about {
+    display: unset;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .about__list {
@@ -708,20 +718,32 @@ img {
 }
 
 .about__title {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   /* text-align: center; */
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 1200px) {
+  .about__title {
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
 
 .team {
   background: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team-container {
@@ -731,19 +753,45 @@ img {
 
 .team-list {
   list-style: none;
-  display: flex;
-  gap: 30px;
+  display: block;
   /* outline: 2px solid red; */
+}
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .team-item {
+  margin: 0 auto;
   background: #ffffff;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   border-radius: 0px 0px 4px 4px;
   flex-wrap: wrap;
-  max-width: 270px;
+  max-width: 450px;
+  height: auto;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.team-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .team-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team-item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .team-icon-list {
@@ -777,18 +825,24 @@ img {
 }
 
 .team-h-two {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   /* text-align: center; */
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 1200px) {
+  .team-h-two {
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
 
 .team-h-three {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -797,7 +851,7 @@ img {
 }
 
 .team-text {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -812,7 +866,7 @@ img {
 }
 
 .client-h-two {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;

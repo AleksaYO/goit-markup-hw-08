@@ -1,5 +1,10 @@
 .about {
-  padding-bottom: 94px;
+  display: none;
+  @include desktop {
+    display: unset;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .about__list {
@@ -41,12 +46,17 @@
 }
 
 .about__title {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   /* text-align: center; */
   letter-spacing: 0.03em;
   color: $text-color;
   margin-bottom: 50px;
+
+  @include desktop {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
