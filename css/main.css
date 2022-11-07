@@ -466,8 +466,8 @@ img {
   background-size: cover;
   background-position: left;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -489,6 +489,8 @@ img {
 @media screen and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -906,7 +908,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .client-icon-item {
-    width: calc((100% - 150px) / 6);
+    width: 170px;
   }
 }
 
