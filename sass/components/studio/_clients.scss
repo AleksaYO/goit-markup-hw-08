@@ -1,22 +1,41 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .client-h-two {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: $text-color;
   margin-bottom: 50px;
+  @include desktop {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 .client-icon-list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   gap: 30px;
+}
+
+.client-icon-item {
+  width: calc((100% - 30px) / 2);
+  @include tablet {
+    width: calc((100% - 60px) / 3);
+  }
+  @include desktop {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .client-icon-link {
@@ -26,7 +45,7 @@
   display: flex;
   border: 1px solid $icon-color;
   border-radius: 4px;
-  width: 170px;
+  width: 100%;
   height: 92px;
   transition: fill 250ms $cubic, border 250ms $cubic;
   &:hover {
