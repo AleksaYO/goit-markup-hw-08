@@ -50,11 +50,19 @@
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
+  width: 100%;
+  height: auto;
   top: 50%;
   left: 50%;
   translate: -50% -50%;
+  @include mobile {
+    width: 450px;
+    height: 609px;
+  }
+  @include desktop {
+    width: 528px;
+    height: 581px;
+  }
 
   padding: 40px;
 
@@ -177,8 +185,12 @@
   display: flex;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 
   letter-spacing: 0.03em;
 
@@ -191,6 +203,12 @@
 .checkbox-link {
   color: #2196f3;
   text-decoration: underline;
+  font-size: 12px;
+  line-height: 1.16;
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .span-icon {
@@ -230,12 +248,17 @@
 } */
 
 .form-modal-btn {
+  @media screen and (max-width: 320px) {
+    font-size: 5vw;
+  }
   display: block;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
 
+  max-width: 200px;
+  width: 100%;
   margin: 0 auto;
   padding: 10px 52px;
 
