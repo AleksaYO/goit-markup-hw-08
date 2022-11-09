@@ -1,0 +1,152 @@
+.menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.menu-btn {
+  position: absolute;
+  top: 10px;
+  right: 66px;
+  margin: 0;
+  padding: 0;
+  width: 0;
+  border: none;
+  z-index: 1111111;
+  @include tablet {
+    display: none;
+  }
+  &:hover {
+    fill: $hover-color;
+  }
+
+  &:focus {
+    fill: $hover-color;
+  }
+}
+
+.menu-btn .menu-close {
+  display: none;
+}
+
+.menu-btn.is-open .menu-close {
+  display: block;
+}
+
+.menu-btn.is-open .menu-open {
+  display: none;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: $secondary-hover;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  &.is-open {
+    display: flex;
+    margin: 0 auto;
+    @include tablet {
+      display: none;
+    }
+  }
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.menu-nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.menu-nav__item {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  @media screen and (max-width: 480px) {
+    font-size: 8.333vw;
+  }
+  list-style: none;
+
+  color: #212121;
+}
+
+.menu-nav__link {
+  text-decoration: none;
+  color: #212121;
+}
+
+.menu-nav__link.current-menu {
+  color: $hover-color;
+}
+
+.menu-address__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.menu-address__item {
+  list-style: none;
+}
+
+.menu-address__tel {
+  color: $hover-color;
+  text-decoration: none;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+
+  letter-spacing: 0.02em;
+}
+
+.menu-address__mail {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+
+  color: $adress-color;
+}
+
+.menu-soc__list {
+  display: flex;
+  gap: 10px;
+}
+
+.menu-soc__item {
+  list-style: none;
+  padding-right: 10px;
+}
+
+.menu-soc__item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu-soc__link {
+  text-decoration: none;
+  color: $hover-color;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+
+  letter-spacing: 0.02em;
+}

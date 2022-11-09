@@ -25,14 +25,78 @@
     <!-------------------- Шапка ---------------------->
     <header class="header">
       <div class="container header__container">
+        <button type="button" class="menu-btn is-open" data-menu-button>
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+            aria-expanded="false"
+          >
+            <use
+              class="menu-close"
+              href="./images/sprite.svg#icon-menu-open"
+            ></use>
+            <use
+              class="menu-open"
+              href="./images/sprite.svg#icon-menu-close"
+            ></use>
+          </svg>
+        </button>
+        <div class="menu" data-menu>
+          <div class="menu-wrapper">
+            <nav class="menu-nav">
+              <ul class="menu-nav__list">
+                <li class="menu-nav__item">
+                  <a class="menu-nav__link" href="./index.html">Студія</a>
+                </li>
+                <li class="menu-nav__item">
+                  <a class="menu-nav__link current-menu" href="./portfolio.html"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="menu-nav__item">
+                  <a class="menu-nav__link">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <address class="menu-address">
+              <ul class="menu-address__list">
+                <li class="menu-address__item">
+                  <a href="tel:+380961111111" class="menu-address__tel"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+                <li class="menu-address__item">
+                  <a href="mailto:info@devstudio.com" class="menu-address__mail"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="menu-soc__list">
+                <li class="menu-soc__item">
+                  <a class="menu-soc__link" href="#">Instagram</a>
+                </li>
+                <li class="menu-soc__item">
+                  <a class="menu-soc__link" href="#">Twitter</a>
+                </li>
+                <li class="menu-soc__item">
+                  <a class="menu-soc__link" href="#">Facebook</a>
+                </li>
+                <li class="menu-soc__item">
+                  <a class="menu-soc__link" href="#">LinkedIn</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+        </div>
         <nav class="header__nav">
           <a href="./index.html" class="header__logo">Web<span>Studio</span></a>
           <ul class="header__list">
             <li class="header-list__item">
-              <a href="./index.html" class="page"> Студія </a>
+              <a href="./index.html" class="page current"> Студія </a>
             </li>
             <li class="header-list__item">
-              <a href="./portfolio.html" class="page current">Портфоліо</a>
+              <a href="./portfolio.html" class="page">Портфоліо</a>
             </li>
             <li class="header-list__item">
               <a href="./contacts.html" class="page">Контакти</a>
@@ -364,5 +428,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
