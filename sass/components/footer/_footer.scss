@@ -25,6 +25,7 @@
 }
 
 .footer-flex__wrapper {
+  gap: 60px;
   @include tablet {
     width: 100%;
     display: flex;
@@ -42,6 +43,7 @@
 
 .footer-box-one {
   width: 230px;
+  margin-bottom: 60px;
 }
 
 .footer-h-three {
@@ -88,7 +90,9 @@
 }
 
 .footer-item {
-  margin-bottom: 9px;
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .map {
@@ -126,6 +130,15 @@
   &:hover {
     color: $hover-color;
     transition: color 250ms $cubic;
+  }
+}
+
+.footer-box-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include desktop {
+    display: unset;
   }
 }
 

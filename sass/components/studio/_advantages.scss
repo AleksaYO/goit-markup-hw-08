@@ -58,6 +58,9 @@
   color: $text-color;
   margin-top: 30px;
   text-align: center;
+  @include tablet {
+    text-align: left;
+  }
 }
 
 .advantages__text {

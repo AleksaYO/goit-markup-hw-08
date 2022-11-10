@@ -9,13 +9,31 @@
 
 .works-list-bottom {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  display: block;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+
+    gap: 30px;
+  }
+}
+
+.works-item-bottom {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+    @include tablet {
+      margin: 0;
+      display: flex;
+    }
+  }
 }
 
 .works-link {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
   transition: box-shadow 250ms $cubic;
 
   &:hover {
@@ -45,7 +63,12 @@
 }
 
 .cards {
-  flex-basis: calc((100% - 60px) / 3);
+  @include tablet {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .border-text-card {
@@ -56,6 +79,7 @@
   align-items: center;
   /* margin: 0 auto; */
   padding: 20px 24px;
+  flex-grow: 1;
 }
 
 .works-text {

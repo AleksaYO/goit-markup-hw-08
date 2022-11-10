@@ -8,7 +8,7 @@
 .menu-btn {
   position: absolute;
   top: 10px;
-  right: 66px;
+  right: 45px;
   margin: 0;
   padding: 0;
   width: 0;
@@ -40,7 +40,7 @@
 
 .menu {
   display: none;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   background-color: $secondary-hover;
@@ -49,6 +49,7 @@
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
+  overflow-y: auto;
   &.is-open {
     display: flex;
     margin: 0 auto;
