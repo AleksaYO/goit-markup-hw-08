@@ -14,15 +14,19 @@
   width: 0;
   border: none;
   z-index: 1111111;
+  cursor: pointer;
+  transition: fill 250ms $cubic;
   @include tablet {
     display: none;
   }
   &:hover {
+    transition: fill 250ms $cubic;
     fill: $hover-color;
   }
 
   &:focus {
     fill: $hover-color;
+    transition: fill 250ms $cubic;
   }
 }
 
@@ -39,7 +43,8 @@
 }
 
 .menu {
-  display: none;
+  transform: scaleY(0);
+  pointer-events: none;
   position: fixed;
   right: 0;
   top: 0;
@@ -50,9 +55,14 @@
   padding-bottom: 48px;
   padding-left: 40px;
   overflow-y: auto;
+  transition: transform 500ms $cubic;
   &.is-open {
     display: flex;
     margin: 0 auto;
+    pointer-events: unset;
+    transform: scaleY(100%);
+    transition: transform 500ms $cubic;
+
     @include tablet {
       display: none;
     }
@@ -70,7 +80,7 @@
 }
 
 .menu-nav__item {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
@@ -87,6 +97,15 @@
 .menu-nav__link {
   text-decoration: none;
   color: #212121;
+  transition: color 250ms $cubic;
+  &:hover {
+    transition: color 250ms $cubic;
+    color: $hover-color;
+  }
+  &:focus {
+    transition: color 250ms $cubic;
+    color: $hover-color;
+  }
 }
 
 .menu-nav__link.current-menu {
