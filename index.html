@@ -18,6 +18,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -125,11 +129,15 @@
     <main>
       <!------------------------------------- Герой ------------------------------------->
       <section class="hero">
-        <h1 class="hero-h-one">
+        <h1 class="hero-h-one animate__animated animate__backInDown">
           Ефективні рішення для<br />
           вашого бізнесу
         </h1>
-        <button type="button" data-modal-open class="hero-btn">
+        <button
+          type="button"
+          data-modal-open
+          class="hero-btn animate__animated animate__delay-1s animate__fadeInDown"
+        >
           Замовити послугу
         </button>
       </section>
@@ -139,11 +147,13 @@
           <h2 class="visually-hidden">Чому ми?</h2>
           <ul class="advantages__list">
             <li class="advantages__item">
-              <div class="advantages-icon__box">
-                <svg class="advantages__icon" width="70" height="70">
-                  <use href="./images/sprite.svg#icon-antenna"></use>
-                </svg>
-              </div>
+              <a class="advanteges-item__link hvr-grow">
+                <div class="advantages-icon__box">
+                  <svg class="advantages__icon" width="70" height="70">
+                    <use href="./images/sprite.svg#icon-antenna"></use>
+                  </svg>
+                </div>
+              </a>
               <h3 class="advantages__point">Увага до деталей</h3>
               <p class="advantages__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
@@ -151,11 +161,13 @@
               </p>
             </li>
             <li class="advantages__item">
-              <div class="advantages-icon__box">
-                <svg class="advantages__icon" width="70" height="70">
-                  <use href="./images/sprite.svg#icon-clock"></use>
-                </svg>
-              </div>
+              <a class="hvr-grow">
+                <div class="advantages-icon__box">
+                  <svg class="advantages__icon" width="70" height="70">
+                    <use href="./images/sprite.svg#icon-clock"></use>
+                  </svg>
+                </div>
+              </a>
               <h3 class="advantages__point">Пунктуальність</h3>
               <p class="advantages__text">
                 Завдання організації, особливо рамки і місце навчання кадрів
@@ -163,22 +175,26 @@
               </p>
             </li>
             <li class="advantages__item">
-              <div class="advantages-icon__box">
-                <svg class="advantages__icon" width="70" height="70">
-                  <use href="./images/sprite.svg#icon-diagram"></use>
-                </svg>
-              </div>
+              <a class="hvr-grow">
+                <div class="advantages-icon__box">
+                  <svg class="advantages__icon" width="70" height="70">
+                    <use href="./images/sprite.svg#icon-diagram"></use>
+                  </svg>
+                </div>
+              </a>
               <h3 class="advantages__point">Планування</h3>
               <p class="advantages__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li class="advantages__item">
-              <div class="advantages-icon__box">
-                <svg class="advantages__icon" width="70" height="70">
-                  <use href="./images/sprite.svg#icon-astronaut"></use>
-                </svg>
-              </div>
+              <a class="hvr-grow">
+                <div class="advantages-icon__box">
+                  <svg class="advantages__icon" width="70" height="70">
+                    <use href="./images/sprite.svg#icon-astronaut"></use>
+                  </svg>
+                </div>
+              </a>
               <h3 class="advantages__point">Сучасні технології</h3>
               <p class="advantages__text">
                 Значимість цих проблем настільки очевидна, що реалізація
@@ -195,37 +211,43 @@
           <h2 class="about__title">Чим ми займаємося</h2>
           <ul class="about__list">
             <li class="about__item">
-              <div class="about-content">
-                <h3 class="about__point">Десктопні додатки</h3>
-              </div>
-              <img
-                src="./images/program.jpg"
-                alt="Програмування"
-                width="370"
-                height="294"
-              />
+              <a class="about-item__link">
+                <div class="about-content">
+                  <h3 class="about__point">Десктопні додатки</h3>
+                </div>
+                <img
+                  src="./images/program.jpg"
+                  alt="Програмування"
+                  width="370"
+                  height="294"
+                />
+              </a>
             </li>
             <li class="about__item">
-              <div class="about-content">
-                <h3 class="about__point">Мобільні додатки</h3>
-              </div>
-              <img
-                src="./images/devise.jpg"
-                alt="Адаптація"
-                width="370"
-                height="294"
-              />
+              <a class="about-item__link">
+                <div class="about-content">
+                  <h3 class="about__point">Мобільні додатки</h3>
+                </div>
+                <img
+                  src="./images/devise.jpg"
+                  alt="Адаптація"
+                  width="370"
+                  height="294"
+                />
+              </a>
             </li>
             <li class="about__item">
-              <div class="about-content">
-                <h3 class="about__point">Дизайнерські рішення</h3>
-              </div>
-              <img
-                src="./images/color.jpg"
-                alt="Дизайн"
-                width="370"
-                height="294"
-              />
+              <a class="about-item__link">
+                <div class="about-content">
+                  <h3 class="about__point">Дизайнерські рішення</h3>
+                </div>
+                <img
+                  src="./images/color.jpg"
+                  alt="Дизайн"
+                  width="370"
+                  height="294"
+                />
+              </a>
             </li>
           </ul>
         </div>

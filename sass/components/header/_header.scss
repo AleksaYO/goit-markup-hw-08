@@ -42,7 +42,24 @@
   padding-top: 32px;
   padding-bottom: 32px;
   transition: color 250ms $cubic;
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $hover-color;
+    border-radius: 2px;
+    width: 0%;
+    height: 4px;
+
+    left: 0;
+    bottom: 0;
+    transition: width 250ms $cubic;
+  }
 }
+
+.page:hover::after {
+  width: 100%;
+}
+
 .page:hover {
   color: $hover-color;
   transition: color 250ms $cubic;

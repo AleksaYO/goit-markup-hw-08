@@ -16,6 +16,11 @@
 
 .about__item {
   position: relative;
+  overflow: hidden;
+}
+
+.about-item__link:hover > .about-content {
+  transform: translateY(0);
 }
 
 .about-content {
@@ -27,6 +32,8 @@
   padding-bottom: 27px;
 
   background: rgba(47, 48, 58, 0.8);
+  transform: translateY(100%);
+  transition: transform 250ms $cubic;
 }
 
 .about__point {

@@ -72,3 +72,18 @@
   color: $adress-color;
   margin-top: 10px;
 }
+
+.hvr-grow {
+  display: block;
+  transform: translateZ(0);
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+  -moz-osx-font-smoothing: grayscale;
+  transition: transform, box-shadow, 250ms $cubic;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
