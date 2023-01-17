@@ -26,6 +26,7 @@
   function onClickBackdropCloseModal(event) {
     if (event.currentTarget === event.target) {
       onCloseModal();
+      console.log(event);
     }
   }
 })();
