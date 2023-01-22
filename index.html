@@ -645,7 +645,7 @@
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <p class="modal-tittle">Залиште свої дані, ми вам передзвонимо</p>
-        <form>
+        <form class="js-modal__form">
           <div class="form-name-box">
             <label class="modal-label">
               <span class="form-text-modal">Ім'я</span>
@@ -686,7 +686,7 @@
                 <input
                   type="email"
                   class="input-modal"
-                  name="modal-email"
+                  name="email"
                   autocomplete="email"
                 />
                 <svg width="18" height="18" class="icon-modal">
@@ -728,7 +728,8 @@
         </button>
       </div>
     </div>
-    <script src="/js/color.js" type="module"></script>
+    <script src="./js/input.js"></script>
+    <script src="/js/color-switcher.js" type="module"></script>
     <script src="./js/modal.js" type="module"></script>
     <script src="./js/menu.js" type="module"></script>
   </body>

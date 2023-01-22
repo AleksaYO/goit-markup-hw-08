@@ -282,6 +282,9 @@
     transition: background-color 250ms $cubic, box-shadow 250ms $cubic;
   }
 }
+.form-modal-btn:disabled {
+  background: #2195f37e;
+}
 
 .input-wrap {
   position: relative;
@@ -300,4 +303,41 @@
 }
 .input-modal:focus + .icon-modal {
   fill: $hover-color;
+}
+
+.confirm {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  height: 60px;
+  width: 370px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1231312;
+
+  border: 1px solid green;
+  padding: 10px;
+
+  display: flex;
+}
+
+.confirm-backdrop {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 12312313132;
+}
+
+.confirm-backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  display: none;
+}
+
+.confirm-text {
+  font-family: Roboto, sans-serif;
+  text-align: center;
 }
